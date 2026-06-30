@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Types of Arts</title>
+    <style>
+        :root {
+            --bg: #fff8f0;
+            --card: #ffffff;
+            --text: #2f2a24;
+            --accent: #8b5e3c;
+            --accent-soft: #f3e1cf;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: linear-gradient(135deg, var(--bg), #fdf3e7);
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        header {
+            text-align: center;
+            padding: 3rem 1rem 2rem;
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(8px);
+        }
+
+        h1 {
+            margin: 0 0 0.5rem;
+            font-size: 2.5rem;
+            color: var(--accent);
+        }
+
+        .subtitle {
+            max-width: 700px;
+            margin: 0 auto;
+            font-size: 1.05rem;
+        }
+
+        main {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 1rem 1rem 3rem;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 1.2rem;
+        }
+
+        .card {
+            background: var(--card);
+            border-radius: 16px;
+            padding: 1.2rem;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+            overflow: hidden;
+        }
+
+        .card img {
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+            border-radius: 12px;
+            margin-bottom: 0.9rem;
+        }
+
+        .card h2 {
+            margin-top: 0;
+            color: var(--accent);
+        }
+
+        .card p {
+            margin-bottom: 0;
+        }
+
+        .highlight {
+            background: var(--accent-soft);
+            border-left: 5px solid var(--accent);
+            border-radius: 12px;
+            padding: 1rem 1.2rem;
+            margin: 1.2rem 0 1.6rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            color: #6b5a4d;
+            font-size: 0.95rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Types of Arts</h1>
+        <p class="subtitle">
+            Art comes in many beautiful forms, each expressing emotion, culture, and imagination in a unique way.
+        </p>
+    </header>
+
+    <main>
+        <section class="highlight">
+            <strong>Art is a universal language.</strong> It can be seen, heard, performed, or even felt through movement, color, and words.
+        </section>
+
+        <section class="grid">
+            <article class="card">
+                <img src="https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?auto=format&fit=crop&w=800&q=80" alt="Colorful painting in an art gallery" />
+                <h2>Visual Arts</h2>
+                <p>Painting, drawing, sculpture, and photography allow artists to create images that capture beauty and meaning.</p>
+            </article>
+
+            <article class="card">
+                <img src="https://images.unsplash.com/photo-1501386761578-eac5c94b800a?auto=format&fit=crop&w=800&q=80" alt="Live performance with dancers on stage" />
+                <h2>Performing Arts</h2>
+                <p>Dance, music, and theater bring stories and emotions to life through live expression and movement.</p>
+            </article>
+
+            <article class="card">
+                <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=800&q=80" alt="Open book with literary inspiration" />
+                <h2>Literary Arts</h2>
+                <p>Poetry, novels, and essays use language to evoke imagination, ideas, and deep human experiences.</p>
+            </article>
+
+            <article class="card">
+                <img src="https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&w=800&q=80" alt="Digital design workspace with a computer" />
+                <h2>Digital Arts</h2>
+                <p>Animation, graphic design, and digital illustration blend technology with creativity in modern ways.</p>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        Created with HTML and CSS to celebrate the many forms of art.
+    </footer>
+</body>
+</html>
